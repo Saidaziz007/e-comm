@@ -1,0 +1,55 @@
+.banners {
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 0;
+}
+
+.banners-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.banners-card {
+  width: 32%;
+  height: 358px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.banners-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banners-card-top h1 {
+  color: #223263;
+  max-width: 280px;
+}
+
+.banners-card-top h2 {
+  color: #40bfff;
+  font-size: 25px;
+}
+
+.banners-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banners-card-bottom p {
+  font-weight: 600;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.banners-card-bottom span {
+  font-weight: 700;
+  color: #fb7181;
+}

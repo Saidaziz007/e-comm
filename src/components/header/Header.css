@@ -1,0 +1,62 @@
+.nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.nav-1-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-1-selector select {
+  border: none;
+  outline: none;
+}
+
+.nav-1-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-1-account {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-1-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.nav-2-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-2-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  list-style: none;
+  font-weight: 600;
+}
+
+.nav-2-list li {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.adidas-all {
+  background-color: #40bfff;
+  height: 500px;
+  position: relative;
+}
+
+.adidas-1 {
+  display: flex;
+  align-items: center;
+}
+
+.adidas-left {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.adidas-right img {
+  position: absolute;
+  top: -80px;
+  width: 700px;
+}
+
+.adidas-left h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.adidas-left p {
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.adidas-left button {
+  width: 120px;
+  background-color: transparent;
+  border: none;
+  text-align: start;
+  color: white;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  padding: 0 0 5px 5px;
+  cursor: pointer;
+}
