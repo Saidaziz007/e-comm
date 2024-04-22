@@ -5,10 +5,11 @@ import { IoIosSearch } from "react-icons/io";
 import navLogo from "../../assets/nav-logo.svg";
 import { NAV_ITEMS } from "../../static";
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <nav className="container">
         <div className="nav-all">
           <div className="nav-1">
@@ -30,7 +31,9 @@ function Header() {
                 <p>My profile</p>
               </div>
               <div className="nav-1-like">
-                <IoMdHeartEmpty />
+                <NavLink to={"like"}>
+                  <IoMdHeartEmpty />
+                </NavLink>
               </div>
               <div className="nav-1-item">
                 <p>Items</p>
@@ -43,7 +46,9 @@ function Header() {
           </div>
           <div className="nav-2">
             <div className="nav-2-logo">
-              <img src={navLogo} alt="" />
+              <NavLink to={"/"}>
+                <img src={navLogo} alt="" />
+              </NavLink>
               <h1>E-Comm</h1>
             </div>
             <ul className="nav-2-list">

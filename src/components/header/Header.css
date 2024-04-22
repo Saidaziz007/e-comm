@@ -1,3 +1,11 @@
+.header {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .nav-1 {
   display: flex;
   align-items: center;
@@ -59,4 +67,8 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.nav-1-like a {
+  color: black;
 }

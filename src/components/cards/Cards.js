@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Cards.css";
 import rate from "../../assets/rate.svg";
 import axios from "axios";
+import { FaRegHeart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 
 function Cards() {
   const [cards, setCards] = useState([]);
@@ -15,7 +17,6 @@ function Cards() {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(cards);
   return (
     <section>
       <div className="container">
@@ -34,10 +35,23 @@ function Cards() {
             <div key={el.id} className="card">
               <div className="card-img">
                 <img src={el.thumbnail} alt="" />
+                <div className="card-like">
+                  <button>
+                    <FaRegHeart />
+                  </button>
+                  <FiShoppingCart />
+                </div>
               </div>
               <div className="card-info">
                 <h1>{el.title}</h1>
                 <img src={rate} alt="" />
+                <div className="card-price">
+                  <h3 className="card-price-1">${el.price}</h3>
+                  <h4 className="card-price-2">${el.price * 2}</h4>
+                  <h3 className="card-price-discount">
+                    {el.discountPercentage}% Off
+                  </h3>
+                </div>
               </div>
             </div>
           ))}

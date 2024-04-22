@@ -38,6 +38,13 @@
 
 .card-img {
   height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img:hover .card-like {
+  bottom: 0;
+  z-index: 1;
 }
 
 .card-img img {
@@ -48,14 +55,69 @@
 
 .card-info {
   text-align: center;
+  padding: 10px;
 }
 
 .card-info h1 {
   color: rgba(34, 50, 99, 1);
+  font-size: 23px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
 .cards-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding-bottom: 30px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-price-1 {
+  color: #40bfff;
+}
+
+.card-price-2 {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.card-price-discount {
+  color: rgba(251, 113, 129, 1);
+}
+
+.card-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -300px;
+  background-color: white;
+  z-index: -1;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.card-like svg {
+  color: #40bfff;
+  font-size: 25px;
+}
+
+.card-like button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
